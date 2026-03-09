@@ -151,18 +151,7 @@ CodeAlpha_Mostafa-s_Portfolio/
 └── README.md        # Project documentation
 ```
 
----
 
-## 🚀 Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/mostafa-1017/CodeAlpha_Mostafa-s_Portfolio.git
-
-# Open in browser
-cd CodeAlpha_Mostafa-s_Portfolio
-open index.html
-```
 
 No build tools or dependencies needed. Just open `index.html` in any browser.
 
