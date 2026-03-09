@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#050510"/>
+  <meta name="description" content="Mostafa Main Uddin — Frontend Developer & TECH Enthusiast from Bangladesh"/>
+  <title>Mostafa Main Uddin — Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Mostafa's Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery"  class="nav-link">Gallery</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+        <li><a href="cv.pdf" target="_blank" class="nav-btn">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot pulse"></span> Available for work · Bangladesh 🇧🇩
+      </div>
+      <p class="hero-hello">Hello, I am</p>
+      <h1 class="hero-name">
+        <span class="glitch" data-text="Mostafa Main Uddin">Mostafa Main Uddin</span>
+      </h1>
+      <div class="hero-role">
+        <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Passionate about technology and innovation. Always learning, always improving.
+        Specializing in Web Development & Computer Vision.
+      </p>
+      <div class="hero-btns">
+        <a href="cv.pdf" target="_blank" class="btn-primary">📄 Download CV</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <div class="profile-ring">
+          <div class="profile-inner">
+            <img src="profile.jpg"
+                 alt="Mostafa Main Uddin"
+                 class="profile-img"
+                 onerror="this.style.display='none';document.getElementById('profileFallback').style.display='flex'"/>
+            <div class="profile-fallback" id="profileFallback">M</div>
+          </div>
+        </div>
+        <div class="profile-badge badge-top">Frontend Dev</div>
+        <div class="profile-badge badge-bottom">TECH Enthusiast</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am <strong>Mostafa Main Uddin</strong>, a Computer Science student 
+            from <strong>BAIUST, Bangladesh 🇧🇩</strong> . Specializing in
+            <strong>Web Development</strong>
+            and <strong>Computer Vision</strong>.
+          </p>
+          <p>
+            My goal is to build <strong>scalable and impactful digital solutions</strong>
+            that solve real-world problems and compete at an international level.
+            Currently a <strong>Frontend Development Intern at CodeAlpha</strong>.
+          </p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <span class="stat-num">6+</span>
+              <span class="stat-lbl">Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">3</span>
+              <span class="stat-lbl">Internship Tasks</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">11+</span>
+              <span class="stat-lbl">Certificates</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">∞</span>
+              <span class="stat-lbl">Passion</span>
+            </div>
+          </div>
+          <div class="about-btns">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="https://thisismostafa.netlify.app/cv.pdf" target="_blank" class="btn-outline">Download CV</a>
+          </div>
+        </div>
+        <div class="about-info reveal">
+          <div class="info-card">
+            <h3>🎓 Education</h3>
+            <p>Computer Science</p>
+            <span>Bangladesh Army International University Of Science and Technology</span>
+          </div>
+          <div class="info-card">
+            <h3>💼 Experience</h3>
+            <p>Frontend Intern</p>
+            <span>CodeAlpha</span>
+          </div>
+          <div class="info-card">
+            <h3>🌐 Focus Areas</h3>
+            <p>Web Dev · ML · CV</p>
+            <span>Always Expanding</span>
+          </div>
+          <div class="info-card">
+            <h3>📍 Location</h3>
+            <p>Chittagong , Bangladesh</p>
+            <span>Open to Remote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <div class="skills-categories">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span>💻</span> Programming</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">Python</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">JavaScript</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">HTML</span><span class="skill-pct">93%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="93%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">CSS</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">Java</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span>⚙️</span> Technologies</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">Machine Learning</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">OpenCV</span><span class="skill-pct">74%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="74%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">Firebase</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">React.js</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta"><span class="skill-name">Git</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span>🛠️</span> Tools</h3>
+          <div class="tools-grid">
+            <div class="tool-pill">GitHub</div>
+            <div class="tool-pill">VS Code</div>
+            <div class="tool-pill">Google Colab</div>
+            <div class="tool-pill">Code::Blocks</div>
+            <div class="tool-pill">TensorFlow</div>
+            <div class="tool-pill">Pandas</div>
+            <div class="tool-pill">Next.js</div>
+            <div class="tool-pill">TypeScript</div>
+            <div class="tool-pill">Tailwind CSS</div>
+            <div class="tool-pill">Matplotlib</div>
+            <div class="tool-pill">YOLO</div>
+            <div class="tool-pill">Docker</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/Hablu-Hackathon-">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/mostafa-1017/Hablu-Hackathon-" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge hackathon-badge">Hackathon</div>
+          <h3 class="project-title">MonBondhu — Community Health Navigator</h3>
+          <p class="project-desc">A healthcare navigation mobile application designed for rural Bangladesh. Connects users with verified healthcare providers and medical guidance.</p>
+          <div class="project-tags"><span>React.js</span><span>Firebase</span><span>HTML</span><span>CSS</span><span>Docker</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/CCTV-footage-">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/mostafa-1017/CCTV-footage-" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge ml-badge">ML / Computer Vision</div>
+          <h3 class="project-title">Adaptive CCTV Footage Compression</h3>
+          <p class="project-desc">Intelligent video compression system using Dynamic ROI to reduce storage cost while preserving quality in important surveillance areas.</p>
+          <div class="project-tags"><span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>YOLO</span><span>Pandas</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/Scolario">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/mostafa-1017/Scolario" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge fullstack-badge">Full Stack</div>
+          <h3 class="project-title">School System Management</h3>
+          <p class="project-desc">A comprehensive school management system with student records, attendance tracking, and grade management built with modern web technologies.</p>
+          <div class="project-tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/Fifa-dataset-Analysis-ML">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/mostafa-1017/Fifa-dataset-Analysis-ML" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge ml-badge">Data Science</div>
+          <h3 class="project-title">FIFA Dataset Analysis & Prediction</h3>
+          <p class="project-desc">Machine learning based analysis of FIFA dataset to predict player performance and market value trends using statistical modeling.</p>
+          <div class="project-tags"><span>Python</span><span>ML</span><span>Pandas</span><span>Matplotlib</span><span>Data Analysis</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/CodeAlpha_Image-Gallery">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://mostafasgallery.netlify.app" target="_blank" class="proj-link" onclick="event.stopPropagation()">↗ Live</a>
+              <a href="https://github.com/mostafa-1017/CodeAlpha_Image-Gallery" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge intern-badge">CodeAlpha · Task 1</div>
+          <h3 class="project-title">Image Gallery</h3>
+          <p class="project-desc">A fully responsive image gallery with lightbox view, hover effects, smooth transitions, and next/prev navigation built with vanilla JS.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+        <div class="project-card reveal" data-github="https://github.com/mostafa-1017/CodeAlpha_Calculator">
+          <div class="project-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/mostafa-1017/CodeAlpha_Calculator" target="_blank" class="proj-link" onclick="event.stopPropagation()">⌥ Code</a>
+            </div>
+          </div>
+          <div class="project-badge intern-badge">CodeAlpha · Task 2</div>
+          <h3 class="project-title">Calculator</h3>
+          <p class="project-desc">A retro Nixie-tube styled calculator with all arithmetic operations, keyboard support, ripple effects and full mobile responsiveness.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="proj-github-btn">View on GitHub <span>→</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-label">04 — Gallery & Achievements</div>
+      <h2 class="section-title reveal">Life Beyond Code</h2>
+      <div class="gallery-tabs reveal">
+        <button class="gtab active" data-tab="certificates">🏆 Certificates</button>
+        <button class="gtab" data-tab="achievements">🥇 Achievements</button>
+        <button class="gtab" data-tab="sports">⚽ Sports</button>
+        <button class="gtab" data-tab="travel">🌏 Travel & Nature</button>
+      </div>
+      <div class="gallery-panel active" id="tab-certificates">
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert1.jpg"  data-caption="Certificate 1"><img src="https://thisismostafa.netlify.app/cert1.jpg"  alt="Certificate 1"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert2.jpg"  data-caption="Certificate 2"><img src="https://thisismostafa.netlify.app/cert2.jpg"  alt="Certificate 2"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert3.jpg"  data-caption="Certificate 3"><img src="https://thisismostafa.netlify.app/cert3.jpg"  alt="Certificate 3"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert4.jpg"  data-caption="Certificate 4"><img src="https://thisismostafa.netlify.app/cert4.jpg"  alt="Certificate 4"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert5.jpg"  data-caption="Certificate 5"><img src="https://thisismostafa.netlify.app/cert5.jpg"  alt="Certificate 5"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert6.jpg"  data-caption="Certificate 6"><img src="https://thisismostafa.netlify.app/cert6.jpg"  alt="Certificate 6"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert7.jpg"  data-caption="Certificate 7"><img src="https://thisismostafa.netlify.app/cert7.jpg"  alt="Certificate 7"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert8.jpg"  data-caption="Certificate 8"><img src="https://thisismostafa.netlify.app/cert8.jpg"  alt="Certificate 8"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert9.jpg"  data-caption="Certificate 9"><img src="https://thisismostafa.netlify.app/cert9.jpg"  alt="Certificate 9"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert10.jpg" data-caption="Certificate 10"><img src="https://thisismostafa.netlify.app/cert10.jpg" alt="Certificate 10" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/cert11.jpg" data-caption="Certificate 11"><img src="https://thisismostafa.netlify.app/cert11.jpg" alt="Certificate 11" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        </div>
+      </div>
+      <div class="gallery-panel" id="tab-achievements">
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award1.jpg"  data-caption="Achievement 1"><img src="https://thisismostafa.netlify.app/award1.jpg"  alt="Award 1"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award2.jpg"  data-caption="Achievement 2"><img src="https://thisismostafa.netlify.app/award2.jpg"  alt="Award 2"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award3.jpg"  data-caption="Achievement 3"><img src="https://thisismostafa.netlify.app/award3.jpg"  alt="Award 3"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award4.jpg"  data-caption="Achievement 4"><img src="https://thisismostafa.netlify.app/award4.jpg"  alt="Award 4"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award5.jpg"  data-caption="Achievement 5"><img src="https://thisismostafa.netlify.app/award5.jpg"  alt="Award 5"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award6.jpg"  data-caption="Achievement 6"><img src="https://thisismostafa.netlify.app/award6.jpg"  alt="Award 6"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award7.jpg"  data-caption="Achievement 7"><img src="https://thisismostafa.netlify.app/award7.jpg"  alt="Award 7"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award8.jpg"  data-caption="Achievement 8"><img src="https://thisismostafa.netlify.app/award8.jpg"  alt="Award 8"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award9.jpg"  data-caption="Achievement 9"><img src="https://thisismostafa.netlify.app/award9.jpg"  alt="Award 9"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/award10.jpg" data-caption="Achievement 10"><img src="https://thisismostafa.netlify.app/award10.jpg" alt="Award 10" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        </div>
+      </div>
+      <div class="gallery-panel" id="tab-sports">
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport1.jpg"  data-caption="Sports 1"><img src="https://thisismostafa.netlify.app/sport1.jpg"  alt="Sport 1"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport2.jpg"  data-caption="Sports 2"><img src="https://thisismostafa.netlify.app/sport2.jpg"  alt="Sport 2"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport3.jpg"  data-caption="Sports 3"><img src="https://thisismostafa.netlify.app/sport3.jpg"  alt="Sport 3"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport4.jpg"  data-caption="Sports 4"><img src="https://thisismostafa.netlify.app/sport4.jpg"  alt="Sport 4"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport5.jpg"  data-caption="Sports 5"><img src="https://thisismostafa.netlify.app/sport5.jpg"  alt="Sport 5"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport6.jpg"  data-caption="Sports 6"><img src="https://thisismostafa.netlify.app/sport6.jpg"  alt="Sport 6"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport7.jpg"  data-caption="Sports 7"><img src="https://thisismostafa.netlify.app/sport7.jpg"  alt="Sport 7"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport8.jpg"  data-caption="Sports 8"><img src="https://thisismostafa.netlify.app/sport8.jpg"  alt="Sport 8"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport9.jpg"  data-caption="Sports 9"><img src="https://thisismostafa.netlify.app/sport9.jpg"  alt="Sport 9"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport10.jpg" data-caption="Sports 10"><img src="https://thisismostafa.netlify.app/sport10.jpg" alt="Sport 10" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport11.jpg" data-caption="Sports 11"><img src="https://thisismostafa.netlify.app/sport11.jpg" alt="Sport 11" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport12.jpg" data-caption="Sports 12"><img src="https://thisismostafa.netlify.app/sport12.jpg" alt="Sport 12" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport13.jpg" data-caption="Sports 13"><img src="https://thisismostafa.netlify.app/sport13.jpg" alt="Sport 13" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport14.jpg" data-caption="Sports 14"><img src="https://thisismostafa.netlify.app/sport14.jpg" alt="Sport 14" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/sport15.jpg" data-caption="Sports 15"><img src="https://thisismostafa.netlify.app/sport15.jpg" alt="Sport 15" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        </div>
+      </div>
+      <div class="gallery-panel" id="tab-travel">
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel1.jpg"  data-caption="Travel 1"><img src="https://thisismostafa.netlify.app/travel1.jpg"  alt="Travel 1"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel2.jpg"  data-caption="Travel 2"><img src="https://thisismostafa.netlify.app/travel2.jpg"  alt="Travel 2"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel3.jpg"  data-caption="Travel 3"><img src="https://thisismostafa.netlify.app/travel3.jpg"  alt="Travel 3"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel4.jpg"  data-caption="Travel 4"><img src="https://thisismostafa.netlify.app/travel4.jpg"  alt="Travel 4"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel5.jpg"  data-caption="Travel 5"><img src="https://thisismostafa.netlify.app/travel5.jpg"  alt="Travel 5"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel6.jpg"  data-caption="Travel 6"><img src="https://thisismostafa.netlify.app/travel6.jpg"  alt="Travel 6"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel7.jpg"  data-caption="Travel 7"><img src="https://thisismostafa.netlify.app/travel7.jpg"  alt="Travel 7"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel8.jpg"  data-caption="Travel 8"><img src="https://thisismostafa.netlify.app/travel8.jpg"  alt="Travel 8"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel9.jpg"  data-caption="Travel 9"><img src="https://thisismostafa.netlify.app/travel9.jpg"  alt="Travel 9"  loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel10.jpg" data-caption="Travel 10"><img src="https://thisismostafa.netlify.app/travel10.jpg" alt="Travel 10" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel11.jpg" data-caption="Travel 11"><img src="https://thisismostafa.netlify.app/travel11.jpg" alt="Travel 11" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+          <div class="gallery-item reveal" data-src="https://thisismostafa.netlify.app/travel12.jpg" data-caption="Travel 12"><img src="https://thisismostafa.netlify.app/travel12.jpg" alt="Travel 12" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Let's Connect</div>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-desc">
+            I'm currently open to new opportunities, internships, and collaborations.
+            Whether you have a project idea, a question, or just want to say hi —
+            my inbox is always open!
+          </p>
+          <div class="contact-items">
+
+            <!-- ── EMAIL ── -->
+            <a href="mailto:mostafasiyam29@gmail.com" class="contact-item contact-email">
+              <span class="contact-icon">
+                <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="8" fill="#EA4335"/>
+                  <path d="M8 14l13 9 13-9M8 13h26a1 1 0 011 1v15a1 1 0 01-1 1H8a1 1 0 01-1-1V14a1 1 0 011-1z"
+                        stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </span>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">mostafasiyam29@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- ── WHATSAPP ── -->
+            <a href="https://wa.me/qr/LWLQAR7EAA3UJ1" target="_blank" class="contact-item contact-whatsapp">
+              <span class="contact-icon">
+                <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="8" fill="#25D366"/>
+                  <path fill="#fff" d="M21 7C13.27 7 7 13.27 7 21c0 2.62.69 5.08 1.89 7.21L7 35l7-1.85A13.93 13.93 0 0021 35c7.73 0 14-6.27 14-14S28.73 7 21 7zm7.18 19.33c-.3.84-1.76 1.61-2.42 1.71-.62.09-1.4.13-2.26-.15-.52-.17-1.19-.39-2.06-.76-3.62-1.56-5.98-5.22-6.16-5.46-.18-.24-1.5-2-1.5-3.82 0-1.82.95-2.71 1.29-3.08.33-.37.73-.46.97-.46h.7c.23 0 .54-.02.84.64.3.66 1.02 2.49 1.11 2.67.09.18.15.39.03.62-.12.23-.18.38-.36.58-.18.2-.38.45-.54.6-.18.17-.36.35-.16.68.2.33.88 1.45 1.9 2.35 1.3 1.16 2.4 1.52 2.74 1.69.33.17.53.14.72-.08.2-.22.84-.98 1.07-1.32.22-.33.44-.27.74-.16.3.11 1.91.9 2.24 1.07.33.17.54.25.62.38.07.14.07.84-.23 1.67z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="ci-label">WhatsApp</span>
+                <span class="ci-value">+880 1601886908</span>
+              </div>
+            </a>
+
+            <!-- ── FACEBOOK ── -->
+            <a href="https://www.facebook.com/share/1AofNuLEhi" target="_blank" class="contact-item contact-facebook">
+              <span class="contact-icon">
+                <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="8" fill="#1877F2"/>
+                  <path fill="#fff" d="M27 8h-3.5C20.42 8 18 10.42 18 13.5V17h-3v5h3v13h5V22h3.5l.5-5H23v-3c0-.83.67-1.5 1.5-1.5H27V8z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="ci-label">Facebook</span>
+                <span class="ci-value">Mostafa Main Uddin</span>
+              </div>
+            </a>
+
+            <!-- ── GITHUB ── -->
+            <a href="https://github.com/mostafa-1017" target="_blank" class="contact-item contact-github">
+              <span class="contact-icon">
+                <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="8" fill="#24292E"/>
+                  <path fill="#fff" d="M21 7C13.27 7 7 13.27 7 21c0 6.19 4.01 11.43 9.57 13.28.7.13.96-.3.96-.67 0-.33-.01-1.43-.02-2.6-3.89.85-4.71-1.88-4.71-1.88-.64-1.62-1.56-2.05-1.56-2.05-1.27-.87.1-.85.1-.85 1.4.1 2.14 1.44 2.14 1.44 1.25 2.14 3.27 1.52 4.07 1.16.13-.9.49-1.52.89-1.87-3.1-.35-6.37-1.55-6.37-6.9 0-1.52.54-2.77 1.44-3.74-.14-.35-.62-1.77.14-3.69 0 0 1.17-.38 3.85 1.44a13.4 13.4 0 013.5-.47c1.19.01 2.38.16 3.5.47 2.67-1.82 3.84-1.44 3.84-1.44.76 1.92.28 3.34.14 3.69.9.97 1.43 2.22 1.43 3.74 0 5.36-3.27 6.54-6.39 6.89.5.43.95 1.29.95 2.6 0 1.88-.02 3.39-.02 3.85 0 .37.25.81.96.67C31 32.42 35 27.18 35 21c0-7.73-6.27-14-14-14z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value">github.com/mostafa-1017</span>
+              </div>
+            </a>
+
+            <!-- ── PORTFOLIO ── -->
+            <a href="https://thisismostafa.netlify.app" target="_blank" class="contact-item">
+              <span class="contact-icon">🌐</span>
+              <div>
+                <span class="ci-label">OLD Portfolio </span>
+                <span class="ci-value">thisismostafa.netlify.app</span>
+              </div>
+            </a>
+
+            <!-- ── RESUME ── -->
+            <a href="https://thisismostafa.netlify.app/cv.pdf" target="_blank" class="contact-item">
+              <span class="contact-icon">📄</span>
+              <div>
+                <span class="ci-label">Resume</span>
+                <span class="ci-value">Download CV</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="cname">Name</label>
+            <input type="text" id="cname" name="from_name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail" name="from_email" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submitBtn" style="width:100%;justify-content:center;">
+            Send Message <span>→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! A confirmation email has been sent to you. Mostafa will get back to you soon.
+          </div>
+          <div class="form-error" id="formError">
+            ❌ Something went wrong. Please try again.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo">Mostafa Main Uddin</a>
+        <p class="footer-copy">© 2026 Mostafa Main Uddin. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════ LIGHTBOX ══════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+    <button class="lb-nav lb-next" id="lbNext">›</button>
+    <div class="lb-content">
+      <img src="" alt="" id="lbImg"/>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
